@@ -1,0 +1,1 @@
+_This is my first post on the Eternal Life Blog, and all the words in this blog will be around for a long time!_
