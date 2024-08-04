@@ -1,4 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Cake Blog</title><link>https://Cakee007.github.io</link><description>This is Cake Blog, and every text here will be saved forever!</description><copyright>Cake Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.minecraft.net/content/dam/minecraftnet/education-edition/icons/Homepage_Gameplay-Trailer_MC-Education-logo_300x300.png</url><title>avatar</title><link>https://Cakee007.github.io</link></image><lastBuildDate>Sun, 14 Jul 2024 13:35:42 +0000</lastBuildDate><managingEditor>Cake Blog</managingEditor><ttl>60</ttl><webMaster>Cake Blog</webMaster><item><title>This is my first immortal article!</title><link>https://Cakee007.github.io/post/This%20is%20my%20first%20immortal%20article%21.html</link><description>**This is my first post on the Eternal Blog, which is written from a template provided by the Gmeek open source project and also uses the Github Pages service, and I am going to be documenting some of my things in the blog.**&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Cake Blog</title><link>https://Cakee007.github.io</link><description>This is Cake Blog, and every text here will be saved forever!</description><copyright>Cake Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.minecraft.net/content/dam/minecraftnet/education-edition/icons/Homepage_Gameplay-Trailer_MC-Education-logo_300x300.png</url><title>avatar</title><link>https://Cakee007.github.io</link></image><lastBuildDate>Sun, 04 Aug 2024 04:32:15 +0000</lastBuildDate><managingEditor>Cake Blog</managingEditor><ttl>60</ttl><webMaster>Cake Blog</webMaster><item><title>Minecraft0.14.3流量进服,支持安卓14更改教程(附apk)</title><link>https://Cakee007.github.io/post/Minecraft0.14.3-liu-liang-jin-fu-%2C-zhi-chi-an-zhuo-14-geng-gai-jiao-cheng-%28-fu-apk%29.html</link><description>### **支持安卓14**&#13;
+反编译AndroidManifest.xml，修改找到如下代码：&#13;
+```&#13;
+&lt;uses-sdk&#13;
+        android:minSdkVersion='17'&#13;
+        android:targetSdkVersion='22' /&gt;&#13;
+&#13;
+```&#13;
+将其中的targetSdkVersion值改为24即可，修改后的代码如下&#13;
+```&#13;
+&lt;uses-sdk&#13;
+        android:minSdkVersion='17'&#13;
+        android:targetSdkVersion='24' /&gt;&#13;
+```&#13;
+&#13;
+### **流量进服**&#13;
+编辑classes.dex文件，修改路径为com/mojang/minecraftpe/MainActivity下的类。</description><guid isPermaLink="true">https://Cakee007.github.io/post/Minecraft0.14.3-liu-liang-jin-fu-%2C-zhi-chi-an-zhuo-14-geng-gai-jiao-cheng-%28-fu-apk%29.html</guid><pubDate>Sun, 04 Aug 2024 04:31:47 +0000</pubDate></item><item><title>This is my first immortal article!</title><link>https://Cakee007.github.io/post/This%20is%20my%20first%20immortal%20article%21.html</link><description>**This is my first post on the Eternal Blog, which is written from a template provided by the Gmeek open source project and also uses the Github Pages service, and I am going to be documenting some of my things in the blog.**&#13;
 &#13;
 _**All the text in this blog will be around for a long time!**_。</description><guid isPermaLink="true">https://Cakee007.github.io/post/This%20is%20my%20first%20immortal%20article%21.html</guid><pubDate>Sun, 14 Jul 2024 12:42:38 +0000</pubDate></item></channel></rss>
