@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://www.minecraft.net/content/dam/minecraftnet/education-edition/icons/Homepage_Gameplay-Trailer_MC-Education-logo_300x300.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content=" ```
+ **### //All Block IDs are here too**
+    const AIR = 0;
+    const STONE = 1;
+    const GRASS = 2;
+    const DIRT = 3;
+    const COBBLESTONE = 4;
+    const COBBLE = 4;
+    const PLANK = 5;
+    const PLANKS = 5;
+    const WOODEN_PLANK = 5;
+    const WOODEN_PLANKS = 5;
+    const SAPLING = 6;
+    const SAPLINGS = 6;
+    const BEDROCK = 7;
+    const WATER = 8;
+    const STILL_WATER = 9;
+    const LAVA = 10;
+    const STILL_LAVA = 11;
+    const SAND = 12;
+    const GRAVEL = 13;
+    const GOLD_ORE = 14;
+    const IRON_ORE = 15;
+    const COAL_ORE = 16;
+    const LOG = 17;
+    const WOOD = 17;
+    const TRUNK = 17;
+    const LEAVES = 18;
+    const LEAVE = 18;
+    const SPONGE = 19;
+    const GLASS = 20;
+    const LAPIS_ORE = 21;
+    const LAPIS_BLOCK = 22;
+
+    const DISPENSER = 23;
+
+    const SANDSTONE = 24;
+    const NOTEBLOCK = 25;
+    const BED_BLOCK = 26;
+    const POWERED_RAIL = 27;
+    const DETECTOR_RAIL = 28;
+    const COBWEB = 30;
+    const TALL_GRASS = 31;
+    const BUSH = 32;
+    const DEAD_BUSH = 32;
+    const WOOL = 35;
+    const DANDELION = 37;
+    const POPPY = 38;
+    const ROSE = 38;
+    const RED_FLOWER = 38;
+    const BROWN_MUSHROOM = 39;
+    const RED_MUSHROOM = 40;
+    const GOLD_BLOCK = 41;
+    const IRON_BLOCK = 42;
+    const DOUBLE_SLAB = 43;
+    const DOUBLE_SLABS = 43;
+    const SLAB = 44;
+    const SLABS = 44;
+    const BRICKS = 45;
+    const BRICKS_BLOCK = 45;
+    const TNT = 46;
+    const BOOKSHELF = 47;
+    const MOSS_STONE = 48;
+    const MOSSY_STONE = 48;
+    const OBSIDIAN = 49;
+    const TORCH = 50;
+    const FIRE = 51;
+    const MONSTER_SPAWNER = 52;
+    const WOOD_STAIRS = 53;
+    const WOODEN_STAIRS = 53;
+    const OAK_WOOD_STAIRS = 53;
+    const OAK_WOODEN_STAIRS = 53;
+    const CHEST = 54;
+    const REDSTONE_WIRE = 55;
+    const DIAMOND_ORE = 56;
+    const DIAMOND_BLOCK = 57;
+    const CRAFTING_TABLE = 58;
+    const WORKBENCH = 58;
+    const WHEAT_BLOCK = 59;
+    const FARMLAND = 60;
+    const FURNACE = 61;
+    const BURNING_FURNACE = 62;
+    const LIT_FURNACE = 62;
+    const SIGN_POST = 63;
+    const DOOR_BLOCK = 64;
+    const WOODEN_DOOR_BLOCK = 64;
+    const WOOD_DOOR_BLOCK = 64;
+    const LADDER = 65;
+    const RAIL = 66;
+    const COBBLE_STAIRS = 67;
+    const COBBLESTONE_STAIRS = 67;
+    const WALL_SIGN = 68;
+    const LEVER = 69;
+    const STONE_PRESSURE_PLATE = 70;
+    const IRON_DOOR_BLOCK = 71;
+    const WOODEN_PRESSURE_PLATE = 72;
+    const REDSTONE_ORE = 73;
+    const GLOWING_REDSTONE_ORE = 74;
+    const LIT_REDSTONE_ORE = 74;
+    const REDSTONE_TORCH = 75;
+    const LIT_REDSTONE_TORCH = 76;
+    const UNLIT_REDSTONE_TORCH = 75;
+    const STONE_BUTTON = 77;
+    const SNOW = 78;
+    const SNOW_LAYER = 78;
+    const ICE = 79;
+    const SNOW_BLOCK = 80;
+    const CACTUS = 81;
+    const CLAY_BLOCK = 82;
+    const REEDS = 83;
+    const SUGARCANE_BLOCK = 83;
+
+    const FENCE = 85;
+    const PUMPKIN = 86;
+    const NETHERRACK = 87;
+    const SOUL_SAND = 88;
+    const GLOWSTONE = 89;
+    const GLOWSTONE_BLOCK = 89;
+
+    const PORTAL_BLOCK = 90;
+    const PORTAL = 90;
+    const LIT_PUMPKIN = 91;
+    const JACK_O_LANTERN = 91;
+    const CAKE_BLOCK = 92;
+
+    const UNPOWERED_REPEATER = 93;
+    const POWERED_REPEATER = 94;
+
+    const TRAPDOOR = 96;
+    const MONSTER_EGG_BLOCK = 97;
+    const STONE_BRICKS = 98;
+    const STONE_BRICK = 98;
+    const BROWN_MUSHROOM_BLOCK = 99;
+    const RED_MUSHROOM_BLOCK = 100;
+    const IRON_BAR = 101;
+    const IRON_BARS = 101;
+    const GLASS_PANE = 102;
+    const GLASS_PANEL = 102;
+    const MELON_BLOCK = 103;
+    const PUMPKIN_STEM = 104;
+    const MELON_STEM = 105;
+    const VINE = 106;
+    const VINES = 106;
+    const FENCE_GATE = 107;
+    const BRICK_STAIRS = 108;
+    const STONE_BRICK_STAIRS = 109;
+    const MYCELIUM = 110;
+    const WATER_LILY = 111;
+    const LILY_PAD = 111;
+    const NETHER_BRICKS = 112;
+    const NETHER_BRICK_BLOCK = 112;
+    const NETHER_BRICK_FENCE = 113;
+    const NETHER_BRICKS_STAIRS = 114;
+    const NETHER_WART_BLOCK = 115;
+    const ENCHANTING_TABLE = 116;
+    const ENCHANT_TABLE = 116;
+    const ENCHANTMENT_TABLE = 116;
+    const BREWING_STAND_BLOCK = 117;
+
+    const END_PORTAL = 120;
+    const END_STONE = 121;
+    const REDSTONE_LAMP = 122;
+    const LIT_REDSTONE_LAMP = 123;
+    const INACTIVE_REDSTONE_LAMP = 123;
+    const ACTIVE_REDSTONE_LAMP = 124;
+
+    const DROPPER = 125;
+
+    const ACTIVATOR_RAIL = 126;
+    const COCOA_BLOCK = 127;
+    const COCOA_PODS = 127;
+    const SANDSTONE_STAIRS = 128;
+    const EMERALD_ORE = 129;
+
+    const TRIPWIRE_HOOK = 131;
+    const TRIPWIRE = 132;
+    const EMERALD_BLOCK = 133;
+    const SPRUCE_WOOD_STAIRS = 134;
+    const SPRUCE_WOODEN_STAIRS = 134;
+    const BIRCH_WOOD_STAIRS = 135;
+    const BIRCH_WOODEN_STAIRS = 135;
+    const JUNGLE_WOOD_STAIRS = 136;
+    const JUNGLE_WOODEN_STAIRS = 136;
+
+    const COBBLE_WALL = 139;
+    const STONE_WALL = 139;
+    const COBBLESTONE_WALL = 139;
+    const FLOWER_POT_BLOCK = 140;
+    const CARROT_BLOCK = 141;
+    const POTATO_BLOCK = 142;
+    const WOODEN_BUTTON = 143;
+    const MOB_HEAD_BLOCK = 144;
+    const SKULL_BLOCK = 144;
+    const TRAPPED_CHEST = 146;
+    const ANVIL = 145;
+    const WEIGHTED_PRESSURE_PLATE_LIGHT = 147;
+    const WEIGHTED_PRESSURE_PLATE_HEAVY = 148;
+    const LIGHT_WEIGHTED_PRESSURE_PLATE = 147;
+    const HEAVY_WEIGHTED_PRESSURE_PLATE = 148;
+
+    const DAYLIGHT_SENSOR = 151;
+    const REDSTONE_BLOCK = 152;
+    const NETHER_QUARTZ_ORE = 153;
+
+    const QUARTZ_BLOCK = 155;
+    const QUARTZ_STAIRS = 156;
+    const DOUBLE_WOOD_SLAB = 157;
+    const DOUBLE_WOODEN_SLAB = 157;
+    const DOUBLE_WOOD_SLABS = 157;
+    const DOUBLE_WOODEN_SLABS = 157;
+    const WOOD_SLAB = 158;
+    const WOODEN_SLAB = 158;
+    const WOOD_SLABS = 158;
+    const WOODEN_SLABS = 158;
+    const STAINED_CLAY = 159;
+    const STAINED_HARDENED_CLAY = 159;
+
+    const LEAVES2 = 161;
+    const LEAVE2 = 161;
+    const WOOD2 = 162;
+    const TRUNK2 = 162;
+    const LOG2 = 162;
+    const ACACIA_WOOD_STAIRS = 163;
+    const ACACIA_WOODEN_STAIRS = 163;
+    const DARK_OAK_WOOD_STAIRS = 164;
+    const DARK_OAK_WOODEN_STAIRS = 164;
+    const SLIME_BLOCK = 165;
+    const IRON_TRAPDOOR = 167;
+
+    const HAY_BALE = 170;
+    const CARPET = 171;
+    const HARDENED_CLAY = 172;
+    const COAL_BLOCK = 173;
+    const PACKED_ICE = 174;
+    const DOUBLE_PLANT = 175;
+
+    const INVERTED_DAYLIGHT_SENSOR = 178;
+    const DAYLIGHT_SENSOR_INVERTED = 178;
+
+    const RED_SANDSTONE = 179;
+    const RED_SANDSTONE_STAIRS = 180;
+    const DOUBLE_RED_SANDSTONE_SLAB = 181;
+    const RED_SANDSTONE_SLAB = 182;
+
+    const FENCE_GATE_SPRUCE = 183;
+    const FENCE_GATE_BIRCH = 184;
+    const FENCE_GATE_JUNGLE = 185;
+    const FENCE_GATE_DARK_OAK = 186;
+    const FENCE_GATE_ACACIA = 187;
+
+    const SPRUCE_DOOR_BLOCK = 193;
+    const BIRCH_DOOR_BLOCK = 194;
+    const JUNGLE_DOOR_BLOCK = 195;
+    const ACACIA_DOOR_BLOCK = 196;
+    const DARK_OAK_DOOR_BLOCK = 197;
+
+    const GRASS_PATH = 198;
+
+    const ITEM_FRAME_BLOCK = 199;
+
+    const PODZOL = 243;
+    const BEETROOT_BLOCK = 244;
+    const STONECUTTER = 245;
+    const GLOWING_OBSIDIAN = 246;
+    const NETHER_REACTOR = 247;
+
+```
+
+```
+    **### //Normal Item IDs**
+    const IRON_SHOVEL = 256;
+    const IRON_PICKAXE = 257;
+    const IRON_AXE = 258;
+    const FLINT_STEEL = 259;
+    const FLINT_AND_STEEL = 259;
+    const APPLE = 260;
+    const BOW = 261;
+    const ARROW = 262;
+    const COAL = 263;
+    const DIAMOND = 264;
+    const IRON_INGOT = 265;
+    const GOLD_INGOT = 266;
+    const IRON_SWORD = 267;
+    const WOODEN_SWORD = 268;
+    const WOODEN_SHOVEL = 269;
+    const WOODEN_PICKAXE = 270;
+    const WOODEN_AXE = 271;
+    const STONE_SWORD = 272;
+    const STONE_SHOVEL = 273;
+    const STONE_PICKAXE = 274;
+    const STONE_AXE = 275;
+    const DIAMOND_SWORD = 276;
+    const DIAMOND_SHOVEL = 277;
+    const DIAMOND_PICKAXE = 278;
+    const DIAMOND_AXE = 279;
+    const STICK = 280;
+    const STICKS = 280;
+    const BOWL = 281;
+    const MUSHROOM_STEW = 282;
+    const GOLD_SWORD = 283;
+    const GOLD_SHOVEL = 284;
+    const GOLD_PICKAXE = 285;
+    const GOLD_AXE = 286;
+    const GOLDEN_SWORD = 283;
+    const GOLDEN_SHOVEL = 284;
+    const GOLDEN_PICKAXE = 285;
+    const GOLDEN_AXE = 286;
+    const STRING = 287;
+    const FEATHER = 288;
+    const GUNPOWDER = 289;
+    const WOODEN_HOE = 290;
+    const STONE_HOE = 291;
+    const IRON_HOE = 292;
+    const DIAMOND_HOE = 293;
+    const GOLD_HOE = 294;
+    const GOLDEN_HOE = 294;
+    const SEEDS = 295;
+    const WHEAT_SEEDS = 295;
+    const WHEAT = 296;
+    const BREAD = 297;
+    const LEATHER_CAP = 298;
+    const LEATHER_TUNIC = 299;
+    const LEATHER_PANTS = 300;
+    const LEATHER_BOOTS = 301;
+    const CHAIN_HELMET = 302;
+    const CHAIN_CHESTPLATE = 303;
+    const CHAIN_LEGGINGS = 304;
+    const CHAIN_BOOTS = 305;
+    const IRON_HELMET = 306;
+    const IRON_CHESTPLATE = 307;
+    const IRON_LEGGINGS = 308;
+    const IRON_BOOTS = 309;
+    const DIAMOND_HELMET = 310;
+    const DIAMOND_CHESTPLATE = 311;
+    const DIAMOND_LEGGINGS = 312;
+    const DIAMOND_BOOTS = 313;
+    const GOLD_HELMET = 314;
+    const GOLD_CHESTPLATE = 315;
+    const GOLD_LEGGINGS = 316;
+    const GOLD_BOOTS = 317;
+    const FLINT = 318;
+    const RAW_PORKCHOP = 319;
+    const COOKED_PORKCHOP = 320;
+    const PAINTING = 321;
+    const GOLDEN_APPLE = 322;
+    const SIGN = 323;
+    const WOODEN_DOOR = 324;
+    const BUCKET = 325;
+
+    const MINECART = 328;
+    const SADDLE = 329;
+    const IRON_DOOR = 330;
+    const REDSTONE = 331;
+    const REDSTONE_DUST = 331;
+    const SNOWBALL = 332;
+    const BOAT = 333;
+    const LEATHER = 334;
+
+    const BRICK = 336;
+    const CLAY = 337;
+    const SUGARCANE = 338;
+    const SUGAR_CANE = 338;
+    const SUGAR_CANES = 338;
+    const PAPER = 339;
+    const BOOK = 340;
+    const SLIMEBALL = 341;
+
+    const EGG = 344;
+    const COMPASS = 345;
+    const FISHING_ROD = 346;
+    const CLOCK = 347;
+    const GLOWSTONE_DUST = 348;
+    const RAW_FISH = 349;
+    const COOKED_FISH = 350;
+    const DYE = 351;
+    const BONE = 352;
+    const SUGAR = 353;
+    const CAKE = 354;
+    const BED = 355;
+
+    const REPEATER = 356;
+
+    const COOKIE = 357;
+
+    const FILLED_MAP = 358;
+
+    const SHEARS = 359;
+    const MELON = 360;
+    const MELON_SLICE = 360;
+    const PUMPKIN_SEEDS = 361;
+    const MELON_SEEDS = 362;
+    const RAW_BEEF = 363;
+    const STEAK = 364;
+    const COOKED_BEEF = 364;
+    const RAW_CHICKEN = 365;
+    const COOKED_CHICKEN = 366;
+    const ROTTEN_FLESH = 367;
+
+    const BLAZE_ROD = 369;
+    const GHAST_TEAR = 370;
+    const GOLD_NUGGET = 371;
+    const GOLDEN_NUGGET = 371;
+    const NETHER_WART = 372;
+    const POTION = 373;
+    const GLASS_BOTTLE = 374;
+    const SPIDER_EYE = 375;
+    const FERMENTED_SPIDER_EYE = 376;
+    const BLAZE_POWDER = 377;
+    const MAGMA_CREAM = 378;
+
+    const BREWING_STAND = 379;
+    const CAULDRON = 380;
+
+    const GLISTERING_MELON = 382;
+    const SPAWN_EGG = 383;
+    const BOTTLE_O_ENCHANTING = 384;
+    const ENCHANTING_BOTTLE = 384;
+
+    const EMERALD = 388;
+
+    const ITEM_FRAME = 389;
+
+    const FLOWER_POT = 390;
+    const CARROT = 391;
+    const CARROTS = 391;
+    const POTATO = 392;
+    const POTATOES = 392;
+    const BAKED_POTATO = 393;
+    const BAKED_POTATOES = 393;
+    const POISONOUS_POTATO = 394;
+    const MAP = 395;
+    const GOLDEN_CARROT = 396;
+    const MOB_HEAD = 397;
+    const SKULL = 397;
+    const PUMPKIN_PIE = 400;
+
+    const ENCHANTED_BOOK = 403;
+
+    const NETHER_BRICK = 405;
+    const QUARTZ = 406;
+    const NETHER_QUARTZ = 406;
+
+    const RAW_RABBIT = 411;
+    const COOKED_RABBIT = 412;
+    const RABBIT_STEW = 413;
+    const RABBIT_FOOT = 414;
+    const RABBIT_HIDE = 415;
+    const SPRUCE_DOOR = 427;
+    const BIRCH_DOOR = 428;
+    const JUNGLE_DOOR = 429;
+    const ACACIA_DOOR = 430;
+    const DARK_OAK_DOOR = 431;
+    const SPLASH_POTION = 438;
+    const SPRUCE_BOAT = 444;
+    const BIRCH_BOAT = 445;
+    const JUNGLE_BOAT = 446;
+    const ACACIA_BOAT = 447;
+    const DARK_OAK_BOAT = 448;
+
+    const CAMERA = 439;
+    const BEETROOT = 457;
+    const BEETROOT_SEEDS = 458;
+    const BEETROOT_SEED = 458;
+    const BEETROOT_SOUP = 459;
+
+    const RAW_SALMON = 460;
+    const CLOWN_FISH = 461;
+    const PUFFER_FISH = 462;
+    const COOKED_SALMON = 463;
+
+    const ENCHANTING_GOLDEN_APPLE = 466;
+
+```   
+。">
+<meta property="og:title" content="Minecraft物品id">
+<meta property="og:description" content=" ```
+ **### //All Block IDs are here too**
+    const AIR = 0;
+    const STONE = 1;
+    const GRASS = 2;
+    const DIRT = 3;
+    const COBBLESTONE = 4;
+    const COBBLE = 4;
+    const PLANK = 5;
+    const PLANKS = 5;
+    const WOODEN_PLANK = 5;
+    const WOODEN_PLANKS = 5;
+    const SAPLING = 6;
+    const SAPLINGS = 6;
+    const BEDROCK = 7;
+    const WATER = 8;
+    const STILL_WATER = 9;
+    const LAVA = 10;
+    const STILL_LAVA = 11;
+    const SAND = 12;
+    const GRAVEL = 13;
+    const GOLD_ORE = 14;
+    const IRON_ORE = 15;
+    const COAL_ORE = 16;
+    const LOG = 17;
+    const WOOD = 17;
+    const TRUNK = 17;
+    const LEAVES = 18;
+    const LEAVE = 18;
+    const SPONGE = 19;
+    const GLASS = 20;
+    const LAPIS_ORE = 21;
+    const LAPIS_BLOCK = 22;
+
+    const DISPENSER = 23;
+
+    const SANDSTONE = 24;
+    const NOTEBLOCK = 25;
+    const BED_BLOCK = 26;
+    const POWERED_RAIL = 27;
+    const DETECTOR_RAIL = 28;
+    const COBWEB = 30;
+    const TALL_GRASS = 31;
+    const BUSH = 32;
+    const DEAD_BUSH = 32;
+    const WOOL = 35;
+    const DANDELION = 37;
+    const POPPY = 38;
+    const ROSE = 38;
+    const RED_FLOWER = 38;
+    const BROWN_MUSHROOM = 39;
+    const RED_MUSHROOM = 40;
+    const GOLD_BLOCK = 41;
+    const IRON_BLOCK = 42;
+    const DOUBLE_SLAB = 43;
+    const DOUBLE_SLABS = 43;
+    const SLAB = 44;
+    const SLABS = 44;
+    const BRICKS = 45;
+    const BRICKS_BLOCK = 45;
+    const TNT = 46;
+    const BOOKSHELF = 47;
+    const MOSS_STONE = 48;
+    const MOSSY_STONE = 48;
+    const OBSIDIAN = 49;
+    const TORCH = 50;
+    const FIRE = 51;
+    const MONSTER_SPAWNER = 52;
+    const WOOD_STAIRS = 53;
+    const WOODEN_STAIRS = 53;
+    const OAK_WOOD_STAIRS = 53;
+    const OAK_WOODEN_STAIRS = 53;
+    const CHEST = 54;
+    const REDSTONE_WIRE = 55;
+    const DIAMOND_ORE = 56;
+    const DIAMOND_BLOCK = 57;
+    const CRAFTING_TABLE = 58;
+    const WORKBENCH = 58;
+    const WHEAT_BLOCK = 59;
+    const FARMLAND = 60;
+    const FURNACE = 61;
+    const BURNING_FURNACE = 62;
+    const LIT_FURNACE = 62;
+    const SIGN_POST = 63;
+    const DOOR_BLOCK = 64;
+    const WOODEN_DOOR_BLOCK = 64;
+    const WOOD_DOOR_BLOCK = 64;
+    const LADDER = 65;
+    const RAIL = 66;
+    const COBBLE_STAIRS = 67;
+    const COBBLESTONE_STAIRS = 67;
+    const WALL_SIGN = 68;
+    const LEVER = 69;
+    const STONE_PRESSURE_PLATE = 70;
+    const IRON_DOOR_BLOCK = 71;
+    const WOODEN_PRESSURE_PLATE = 72;
+    const REDSTONE_ORE = 73;
+    const GLOWING_REDSTONE_ORE = 74;
+    const LIT_REDSTONE_ORE = 74;
+    const REDSTONE_TORCH = 75;
+    const LIT_REDSTONE_TORCH = 76;
+    const UNLIT_REDSTONE_TORCH = 75;
+    const STONE_BUTTON = 77;
+    const SNOW = 78;
+    const SNOW_LAYER = 78;
+    const ICE = 79;
+    const SNOW_BLOCK = 80;
+    const CACTUS = 81;
+    const CLAY_BLOCK = 82;
+    const REEDS = 83;
+    const SUGARCANE_BLOCK = 83;
+
+    const FENCE = 85;
+    const PUMPKIN = 86;
+    const NETHERRACK = 87;
+    const SOUL_SAND = 88;
+    const GLOWSTONE = 89;
+    const GLOWSTONE_BLOCK = 89;
+
+    const PORTAL_BLOCK = 90;
+    const PORTAL = 90;
+    const LIT_PUMPKIN = 91;
+    const JACK_O_LANTERN = 91;
+    const CAKE_BLOCK = 92;
+
+    const UNPOWERED_REPEATER = 93;
+    const POWERED_REPEATER = 94;
+
+    const TRAPDOOR = 96;
+    const MONSTER_EGG_BLOCK = 97;
+    const STONE_BRICKS = 98;
+    const STONE_BRICK = 98;
+    const BROWN_MUSHROOM_BLOCK = 99;
+    const RED_MUSHROOM_BLOCK = 100;
+    const IRON_BAR = 101;
+    const IRON_BARS = 101;
+    const GLASS_PANE = 102;
+    const GLASS_PANEL = 102;
+    const MELON_BLOCK = 103;
+    const PUMPKIN_STEM = 104;
+    const MELON_STEM = 105;
+    const VINE = 106;
+    const VINES = 106;
+    const FENCE_GATE = 107;
+    const BRICK_STAIRS = 108;
+    const STONE_BRICK_STAIRS = 109;
+    const MYCELIUM = 110;
+    const WATER_LILY = 111;
+    const LILY_PAD = 111;
+    const NETHER_BRICKS = 112;
+    const NETHER_BRICK_BLOCK = 112;
+    const NETHER_BRICK_FENCE = 113;
+    const NETHER_BRICKS_STAIRS = 114;
+    const NETHER_WART_BLOCK = 115;
+    const ENCHANTING_TABLE = 116;
+    const ENCHANT_TABLE = 116;
+    const ENCHANTMENT_TABLE = 116;
+    const BREWING_STAND_BLOCK = 117;
+
+    const END_PORTAL = 120;
+    const END_STONE = 121;
+    const REDSTONE_LAMP = 122;
+    const LIT_REDSTONE_LAMP = 123;
+    const INACTIVE_REDSTONE_LAMP = 123;
+    const ACTIVE_REDSTONE_LAMP = 124;
+
+    const DROPPER = 125;
+
+    const ACTIVATOR_RAIL = 126;
+    const COCOA_BLOCK = 127;
+    const COCOA_PODS = 127;
+    const SANDSTONE_STAIRS = 128;
+    const EMERALD_ORE = 129;
+
+    const TRIPWIRE_HOOK = 131;
+    const TRIPWIRE = 132;
+    const EMERALD_BLOCK = 133;
+    const SPRUCE_WOOD_STAIRS = 134;
+    const SPRUCE_WOODEN_STAIRS = 134;
+    const BIRCH_WOOD_STAIRS = 135;
+    const BIRCH_WOODEN_STAIRS = 135;
+    const JUNGLE_WOOD_STAIRS = 136;
+    const JUNGLE_WOODEN_STAIRS = 136;
+
+    const COBBLE_WALL = 139;
+    const STONE_WALL = 139;
+    const COBBLESTONE_WALL = 139;
+    const FLOWER_POT_BLOCK = 140;
+    const CARROT_BLOCK = 141;
+    const POTATO_BLOCK = 142;
+    const WOODEN_BUTTON = 143;
+    const MOB_HEAD_BLOCK = 144;
+    const SKULL_BLOCK = 144;
+    const TRAPPED_CHEST = 146;
+    const ANVIL = 145;
+    const WEIGHTED_PRESSURE_PLATE_LIGHT = 147;
+    const WEIGHTED_PRESSURE_PLATE_HEAVY = 148;
+    const LIGHT_WEIGHTED_PRESSURE_PLATE = 147;
+    const HEAVY_WEIGHTED_PRESSURE_PLATE = 148;
+
+    const DAYLIGHT_SENSOR = 151;
+    const REDSTONE_BLOCK = 152;
+    const NETHER_QUARTZ_ORE = 153;
+
+    const QUARTZ_BLOCK = 155;
+    const QUARTZ_STAIRS = 156;
+    const DOUBLE_WOOD_SLAB = 157;
+    const DOUBLE_WOODEN_SLAB = 157;
+    const DOUBLE_WOOD_SLABS = 157;
+    const DOUBLE_WOODEN_SLABS = 157;
+    const WOOD_SLAB = 158;
+    const WOODEN_SLAB = 158;
+    const WOOD_SLABS = 158;
+    const WOODEN_SLABS = 158;
+    const STAINED_CLAY = 159;
+    const STAINED_HARDENED_CLAY = 159;
+
+    const LEAVES2 = 161;
+    const LEAVE2 = 161;
+    const WOOD2 = 162;
+    const TRUNK2 = 162;
+    const LOG2 = 162;
+    const ACACIA_WOOD_STAIRS = 163;
+    const ACACIA_WOODEN_STAIRS = 163;
+    const DARK_OAK_WOOD_STAIRS = 164;
+    const DARK_OAK_WOODEN_STAIRS = 164;
+    const SLIME_BLOCK = 165;
+    const IRON_TRAPDOOR = 167;
+
+    const HAY_BALE = 170;
+    const CARPET = 171;
+    const HARDENED_CLAY = 172;
+    const COAL_BLOCK = 173;
+    const PACKED_ICE = 174;
+    const DOUBLE_PLANT = 175;
+
+    const INVERTED_DAYLIGHT_SENSOR = 178;
+    const DAYLIGHT_SENSOR_INVERTED = 178;
+
+    const RED_SANDSTONE = 179;
+    const RED_SANDSTONE_STAIRS = 180;
+    const DOUBLE_RED_SANDSTONE_SLAB = 181;
+    const RED_SANDSTONE_SLAB = 182;
+
+    const FENCE_GATE_SPRUCE = 183;
+    const FENCE_GATE_BIRCH = 184;
+    const FENCE_GATE_JUNGLE = 185;
+    const FENCE_GATE_DARK_OAK = 186;
+    const FENCE_GATE_ACACIA = 187;
+
+    const SPRUCE_DOOR_BLOCK = 193;
+    const BIRCH_DOOR_BLOCK = 194;
+    const JUNGLE_DOOR_BLOCK = 195;
+    const ACACIA_DOOR_BLOCK = 196;
+    const DARK_OAK_DOOR_BLOCK = 197;
+
+    const GRASS_PATH = 198;
+
+    const ITEM_FRAME_BLOCK = 199;
+
+    const PODZOL = 243;
+    const BEETROOT_BLOCK = 244;
+    const STONECUTTER = 245;
+    const GLOWING_OBSIDIAN = 246;
+    const NETHER_REACTOR = 247;
+
+```
+
+```
+    **### //Normal Item IDs**
+    const IRON_SHOVEL = 256;
+    const IRON_PICKAXE = 257;
+    const IRON_AXE = 258;
+    const FLINT_STEEL = 259;
+    const FLINT_AND_STEEL = 259;
+    const APPLE = 260;
+    const BOW = 261;
+    const ARROW = 262;
+    const COAL = 263;
+    const DIAMOND = 264;
+    const IRON_INGOT = 265;
+    const GOLD_INGOT = 266;
+    const IRON_SWORD = 267;
+    const WOODEN_SWORD = 268;
+    const WOODEN_SHOVEL = 269;
+    const WOODEN_PICKAXE = 270;
+    const WOODEN_AXE = 271;
+    const STONE_SWORD = 272;
+    const STONE_SHOVEL = 273;
+    const STONE_PICKAXE = 274;
+    const STONE_AXE = 275;
+    const DIAMOND_SWORD = 276;
+    const DIAMOND_SHOVEL = 277;
+    const DIAMOND_PICKAXE = 278;
+    const DIAMOND_AXE = 279;
+    const STICK = 280;
+    const STICKS = 280;
+    const BOWL = 281;
+    const MUSHROOM_STEW = 282;
+    const GOLD_SWORD = 283;
+    const GOLD_SHOVEL = 284;
+    const GOLD_PICKAXE = 285;
+    const GOLD_AXE = 286;
+    const GOLDEN_SWORD = 283;
+    const GOLDEN_SHOVEL = 284;
+    const GOLDEN_PICKAXE = 285;
+    const GOLDEN_AXE = 286;
+    const STRING = 287;
+    const FEATHER = 288;
+    const GUNPOWDER = 289;
+    const WOODEN_HOE = 290;
+    const STONE_HOE = 291;
+    const IRON_HOE = 292;
+    const DIAMOND_HOE = 293;
+    const GOLD_HOE = 294;
+    const GOLDEN_HOE = 294;
+    const SEEDS = 295;
+    const WHEAT_SEEDS = 295;
+    const WHEAT = 296;
+    const BREAD = 297;
+    const LEATHER_CAP = 298;
+    const LEATHER_TUNIC = 299;
+    const LEATHER_PANTS = 300;
+    const LEATHER_BOOTS = 301;
+    const CHAIN_HELMET = 302;
+    const CHAIN_CHESTPLATE = 303;
+    const CHAIN_LEGGINGS = 304;
+    const CHAIN_BOOTS = 305;
+    const IRON_HELMET = 306;
+    const IRON_CHESTPLATE = 307;
+    const IRON_LEGGINGS = 308;
+    const IRON_BOOTS = 309;
+    const DIAMOND_HELMET = 310;
+    const DIAMOND_CHESTPLATE = 311;
+    const DIAMOND_LEGGINGS = 312;
+    const DIAMOND_BOOTS = 313;
+    const GOLD_HELMET = 314;
+    const GOLD_CHESTPLATE = 315;
+    const GOLD_LEGGINGS = 316;
+    const GOLD_BOOTS = 317;
+    const FLINT = 318;
+    const RAW_PORKCHOP = 319;
+    const COOKED_PORKCHOP = 320;
+    const PAINTING = 321;
+    const GOLDEN_APPLE = 322;
+    const SIGN = 323;
+    const WOODEN_DOOR = 324;
+    const BUCKET = 325;
+
+    const MINECART = 328;
+    const SADDLE = 329;
+    const IRON_DOOR = 330;
+    const REDSTONE = 331;
+    const REDSTONE_DUST = 331;
+    const SNOWBALL = 332;
+    const BOAT = 333;
+    const LEATHER = 334;
+
+    const BRICK = 336;
+    const CLAY = 337;
+    const SUGARCANE = 338;
+    const SUGAR_CANE = 338;
+    const SUGAR_CANES = 338;
+    const PAPER = 339;
+    const BOOK = 340;
+    const SLIMEBALL = 341;
+
+    const EGG = 344;
+    const COMPASS = 345;
+    const FISHING_ROD = 346;
+    const CLOCK = 347;
+    const GLOWSTONE_DUST = 348;
+    const RAW_FISH = 349;
+    const COOKED_FISH = 350;
+    const DYE = 351;
+    const BONE = 352;
+    const SUGAR = 353;
+    const CAKE = 354;
+    const BED = 355;
+
+    const REPEATER = 356;
+
+    const COOKIE = 357;
+
+    const FILLED_MAP = 358;
+
+    const SHEARS = 359;
+    const MELON = 360;
+    const MELON_SLICE = 360;
+    const PUMPKIN_SEEDS = 361;
+    const MELON_SEEDS = 362;
+    const RAW_BEEF = 363;
+    const STEAK = 364;
+    const COOKED_BEEF = 364;
+    const RAW_CHICKEN = 365;
+    const COOKED_CHICKEN = 366;
+    const ROTTEN_FLESH = 367;
+
+    const BLAZE_ROD = 369;
+    const GHAST_TEAR = 370;
+    const GOLD_NUGGET = 371;
+    const GOLDEN_NUGGET = 371;
+    const NETHER_WART = 372;
+    const POTION = 373;
+    const GLASS_BOTTLE = 374;
+    const SPIDER_EYE = 375;
+    const FERMENTED_SPIDER_EYE = 376;
+    const BLAZE_POWDER = 377;
+    const MAGMA_CREAM = 378;
+
+    const BREWING_STAND = 379;
+    const CAULDRON = 380;
+
+    const GLISTERING_MELON = 382;
+    const SPAWN_EGG = 383;
+    const BOTTLE_O_ENCHANTING = 384;
+    const ENCHANTING_BOTTLE = 384;
+
+    const EMERALD = 388;
+
+    const ITEM_FRAME = 389;
+
+    const FLOWER_POT = 390;
+    const CARROT = 391;
+    const CARROTS = 391;
+    const POTATO = 392;
+    const POTATOES = 392;
+    const BAKED_POTATO = 393;
+    const BAKED_POTATOES = 393;
+    const POISONOUS_POTATO = 394;
+    const MAP = 395;
+    const GOLDEN_CARROT = 396;
+    const MOB_HEAD = 397;
+    const SKULL = 397;
+    const PUMPKIN_PIE = 400;
+
+    const ENCHANTED_BOOK = 403;
+
+    const NETHER_BRICK = 405;
+    const QUARTZ = 406;
+    const NETHER_QUARTZ = 406;
+
+    const RAW_RABBIT = 411;
+    const COOKED_RABBIT = 412;
+    const RABBIT_STEW = 413;
+    const RABBIT_FOOT = 414;
+    const RABBIT_HIDE = 415;
+    const SPRUCE_DOOR = 427;
+    const BIRCH_DOOR = 428;
+    const JUNGLE_DOOR = 429;
+    const ACACIA_DOOR = 430;
+    const DARK_OAK_DOOR = 431;
+    const SPLASH_POTION = 438;
+    const SPRUCE_BOAT = 444;
+    const BIRCH_BOAT = 445;
+    const JUNGLE_BOAT = 446;
+    const ACACIA_BOAT = 447;
+    const DARK_OAK_BOAT = 448;
+
+    const CAMERA = 439;
+    const BEETROOT = 457;
+    const BEETROOT_SEEDS = 458;
+    const BEETROOT_SEED = 458;
+    const BEETROOT_SOUP = 459;
+
+    const RAW_SALMON = 460;
+    const CLOWN_FISH = 461;
+    const PUFFER_FISH = 462;
+    const COOKED_SALMON = 463;
+
+    const ENCHANTING_GOLDEN_APPLE = 466;
+
+```   
+。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://Cakee007.github.io/post/Minecraft-wu-pin-id.html">
+<meta property="og:image" content="https://www.minecraft.net/content/dam/minecraftnet/education-edition/icons/Homepage_Gameplay-Trailer_MC-Education-logo_300x300.png">
+<title>Minecraft物品id</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">Minecraft物品id</h1>
+<div class="title-right">
+    <a href="https://Cakee007.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/Cakee007/Cakee007.github.io/issues/6" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">**### //All Block IDs are here too**
+   const AIR = 0;
+   const STONE = 1;
+   const GRASS = 2;
+   const DIRT = 3;
+   const COBBLESTONE = 4;
+   const COBBLE = 4;
+   const PLANK = 5;
+   const PLANKS = 5;
+   const WOODEN_PLANK = 5;
+   const WOODEN_PLANKS = 5;
+   const SAPLING = 6;
+   const SAPLINGS = 6;
+   const BEDROCK = 7;
+   const WATER = 8;
+   const STILL_WATER = 9;
+   const LAVA = 10;
+   const STILL_LAVA = 11;
+   const SAND = 12;
+   const GRAVEL = 13;
+   const GOLD_ORE = 14;
+   const IRON_ORE = 15;
+   const COAL_ORE = 16;
+   const LOG = 17;
+   const WOOD = 17;
+   const TRUNK = 17;
+   const LEAVES = 18;
+   const LEAVE = 18;
+   const SPONGE = 19;
+   const GLASS = 20;
+   const LAPIS_ORE = 21;
+   const LAPIS_BLOCK = 22;
+
+   const DISPENSER = 23;
+
+   const SANDSTONE = 24;
+   const NOTEBLOCK = 25;
+   const BED_BLOCK = 26;
+   const POWERED_RAIL = 27;
+   const DETECTOR_RAIL = 28;
+   const COBWEB = 30;
+   const TALL_GRASS = 31;
+   const BUSH = 32;
+   const DEAD_BUSH = 32;
+   const WOOL = 35;
+   const DANDELION = 37;
+   const POPPY = 38;
+   const ROSE = 38;
+   const RED_FLOWER = 38;
+   const BROWN_MUSHROOM = 39;
+   const RED_MUSHROOM = 40;
+   const GOLD_BLOCK = 41;
+   const IRON_BLOCK = 42;
+   const DOUBLE_SLAB = 43;
+   const DOUBLE_SLABS = 43;
+   const SLAB = 44;
+   const SLABS = 44;
+   const BRICKS = 45;
+   const BRICKS_BLOCK = 45;
+   const TNT = 46;
+   const BOOKSHELF = 47;
+   const MOSS_STONE = 48;
+   const MOSSY_STONE = 48;
+   const OBSIDIAN = 49;
+   const TORCH = 50;
+   const FIRE = 51;
+   const MONSTER_SPAWNER = 52;
+   const WOOD_STAIRS = 53;
+   const WOODEN_STAIRS = 53;
+   const OAK_WOOD_STAIRS = 53;
+   const OAK_WOODEN_STAIRS = 53;
+   const CHEST = 54;
+   const REDSTONE_WIRE = 55;
+   const DIAMOND_ORE = 56;
+   const DIAMOND_BLOCK = 57;
+   const CRAFTING_TABLE = 58;
+   const WORKBENCH = 58;
+   const WHEAT_BLOCK = 59;
+   const FARMLAND = 60;
+   const FURNACE = 61;
+   const BURNING_FURNACE = 62;
+   const LIT_FURNACE = 62;
+   const SIGN_POST = 63;
+   const DOOR_BLOCK = 64;
+   const WOODEN_DOOR_BLOCK = 64;
+   const WOOD_DOOR_BLOCK = 64;
+   const LADDER = 65;
+   const RAIL = 66;
+   const COBBLE_STAIRS = 67;
+   const COBBLESTONE_STAIRS = 67;
+   const WALL_SIGN = 68;
+   const LEVER = 69;
+   const STONE_PRESSURE_PLATE = 70;
+   const IRON_DOOR_BLOCK = 71;
+   const WOODEN_PRESSURE_PLATE = 72;
+   const REDSTONE_ORE = 73;
+   const GLOWING_REDSTONE_ORE = 74;
+   const LIT_REDSTONE_ORE = 74;
+   const REDSTONE_TORCH = 75;
+   const LIT_REDSTONE_TORCH = 76;
+   const UNLIT_REDSTONE_TORCH = 75;
+   const STONE_BUTTON = 77;
+   const SNOW = 78;
+   const SNOW_LAYER = 78;
+   const ICE = 79;
+   const SNOW_BLOCK = 80;
+   const CACTUS = 81;
+   const CLAY_BLOCK = 82;
+   const REEDS = 83;
+   const SUGARCANE_BLOCK = 83;
+
+   const FENCE = 85;
+   const PUMPKIN = 86;
+   const NETHERRACK = 87;
+   const SOUL_SAND = 88;
+   const GLOWSTONE = 89;
+   const GLOWSTONE_BLOCK = 89;
+
+   const PORTAL_BLOCK = 90;
+   const PORTAL = 90;
+   const LIT_PUMPKIN = 91;
+   const JACK_O_LANTERN = 91;
+   const CAKE_BLOCK = 92;
+
+   const UNPOWERED_REPEATER = 93;
+   const POWERED_REPEATER = 94;
+
+   const TRAPDOOR = 96;
+   const MONSTER_EGG_BLOCK = 97;
+   const STONE_BRICKS = 98;
+   const STONE_BRICK = 98;
+   const BROWN_MUSHROOM_BLOCK = 99;
+   const RED_MUSHROOM_BLOCK = 100;
+   const IRON_BAR = 101;
+   const IRON_BARS = 101;
+   const GLASS_PANE = 102;
+   const GLASS_PANEL = 102;
+   const MELON_BLOCK = 103;
+   const PUMPKIN_STEM = 104;
+   const MELON_STEM = 105;
+   const VINE = 106;
+   const VINES = 106;
+   const FENCE_GATE = 107;
+   const BRICK_STAIRS = 108;
+   const STONE_BRICK_STAIRS = 109;
+   const MYCELIUM = 110;
+   const WATER_LILY = 111;
+   const LILY_PAD = 111;
+   const NETHER_BRICKS = 112;
+   const NETHER_BRICK_BLOCK = 112;
+   const NETHER_BRICK_FENCE = 113;
+   const NETHER_BRICKS_STAIRS = 114;
+   const NETHER_WART_BLOCK = 115;
+   const ENCHANTING_TABLE = 116;
+   const ENCHANT_TABLE = 116;
+   const ENCHANTMENT_TABLE = 116;
+   const BREWING_STAND_BLOCK = 117;
+
+   const END_PORTAL = 120;
+   const END_STONE = 121;
+   const REDSTONE_LAMP = 122;
+   const LIT_REDSTONE_LAMP = 123;
+   const INACTIVE_REDSTONE_LAMP = 123;
+   const ACTIVE_REDSTONE_LAMP = 124;
+
+   const DROPPER = 125;
+
+   const ACTIVATOR_RAIL = 126;
+   const COCOA_BLOCK = 127;
+   const COCOA_PODS = 127;
+   const SANDSTONE_STAIRS = 128;
+   const EMERALD_ORE = 129;
+
+   const TRIPWIRE_HOOK = 131;
+   const TRIPWIRE = 132;
+   const EMERALD_BLOCK = 133;
+   const SPRUCE_WOOD_STAIRS = 134;
+   const SPRUCE_WOODEN_STAIRS = 134;
+   const BIRCH_WOOD_STAIRS = 135;
+   const BIRCH_WOODEN_STAIRS = 135;
+   const JUNGLE_WOOD_STAIRS = 136;
+   const JUNGLE_WOODEN_STAIRS = 136;
+
+   const COBBLE_WALL = 139;
+   const STONE_WALL = 139;
+   const COBBLESTONE_WALL = 139;
+   const FLOWER_POT_BLOCK = 140;
+   const CARROT_BLOCK = 141;
+   const POTATO_BLOCK = 142;
+   const WOODEN_BUTTON = 143;
+   const MOB_HEAD_BLOCK = 144;
+   const SKULL_BLOCK = 144;
+   const TRAPPED_CHEST = 146;
+   const ANVIL = 145;
+   const WEIGHTED_PRESSURE_PLATE_LIGHT = 147;
+   const WEIGHTED_PRESSURE_PLATE_HEAVY = 148;
+   const LIGHT_WEIGHTED_PRESSURE_PLATE = 147;
+   const HEAVY_WEIGHTED_PRESSURE_PLATE = 148;
+
+   const DAYLIGHT_SENSOR = 151;
+   const REDSTONE_BLOCK = 152;
+   const NETHER_QUARTZ_ORE = 153;
+
+   const QUARTZ_BLOCK = 155;
+   const QUARTZ_STAIRS = 156;
+   const DOUBLE_WOOD_SLAB = 157;
+   const DOUBLE_WOODEN_SLAB = 157;
+   const DOUBLE_WOOD_SLABS = 157;
+   const DOUBLE_WOODEN_SLABS = 157;
+   const WOOD_SLAB = 158;
+   const WOODEN_SLAB = 158;
+   const WOOD_SLABS = 158;
+   const WOODEN_SLABS = 158;
+   const STAINED_CLAY = 159;
+   const STAINED_HARDENED_CLAY = 159;
+
+   const LEAVES2 = 161;
+   const LEAVE2 = 161;
+   const WOOD2 = 162;
+   const TRUNK2 = 162;
+   const LOG2 = 162;
+   const ACACIA_WOOD_STAIRS = 163;
+   const ACACIA_WOODEN_STAIRS = 163;
+   const DARK_OAK_WOOD_STAIRS = 164;
+   const DARK_OAK_WOODEN_STAIRS = 164;
+   const SLIME_BLOCK = 165;
+   const IRON_TRAPDOOR = 167;
+
+   const HAY_BALE = 170;
+   const CARPET = 171;
+   const HARDENED_CLAY = 172;
+   const COAL_BLOCK = 173;
+   const PACKED_ICE = 174;
+   const DOUBLE_PLANT = 175;
+
+   const INVERTED_DAYLIGHT_SENSOR = 178;
+   const DAYLIGHT_SENSOR_INVERTED = 178;
+
+   const RED_SANDSTONE = 179;
+   const RED_SANDSTONE_STAIRS = 180;
+   const DOUBLE_RED_SANDSTONE_SLAB = 181;
+   const RED_SANDSTONE_SLAB = 182;
+
+   const FENCE_GATE_SPRUCE = 183;
+   const FENCE_GATE_BIRCH = 184;
+   const FENCE_GATE_JUNGLE = 185;
+   const FENCE_GATE_DARK_OAK = 186;
+   const FENCE_GATE_ACACIA = 187;
+
+   const SPRUCE_DOOR_BLOCK = 193;
+   const BIRCH_DOOR_BLOCK = 194;
+   const JUNGLE_DOOR_BLOCK = 195;
+   const ACACIA_DOOR_BLOCK = 196;
+   const DARK_OAK_DOOR_BLOCK = 197;
+
+   const GRASS_PATH = 198;
+
+   const ITEM_FRAME_BLOCK = 199;
+
+   const PODZOL = 243;
+   const BEETROOT_BLOCK = 244;
+   const STONECUTTER = 245;
+   const GLOWING_OBSIDIAN = 246;
+   const NETHER_REACTOR = 247;
+
+</code></pre>
+<pre class="notranslate"><code class="notranslate">    **### //Normal Item IDs**
+    const IRON_SHOVEL = 256;
+    const IRON_PICKAXE = 257;
+    const IRON_AXE = 258;
+    const FLINT_STEEL = 259;
+    const FLINT_AND_STEEL = 259;
+    const APPLE = 260;
+    const BOW = 261;
+    const ARROW = 262;
+    const COAL = 263;
+    const DIAMOND = 264;
+    const IRON_INGOT = 265;
+    const GOLD_INGOT = 266;
+    const IRON_SWORD = 267;
+    const WOODEN_SWORD = 268;
+    const WOODEN_SHOVEL = 269;
+    const WOODEN_PICKAXE = 270;
+    const WOODEN_AXE = 271;
+    const STONE_SWORD = 272;
+    const STONE_SHOVEL = 273;
+    const STONE_PICKAXE = 274;
+    const STONE_AXE = 275;
+    const DIAMOND_SWORD = 276;
+    const DIAMOND_SHOVEL = 277;
+    const DIAMOND_PICKAXE = 278;
+    const DIAMOND_AXE = 279;
+    const STICK = 280;
+    const STICKS = 280;
+    const BOWL = 281;
+    const MUSHROOM_STEW = 282;
+    const GOLD_SWORD = 283;
+    const GOLD_SHOVEL = 284;
+    const GOLD_PICKAXE = 285;
+    const GOLD_AXE = 286;
+    const GOLDEN_SWORD = 283;
+    const GOLDEN_SHOVEL = 284;
+    const GOLDEN_PICKAXE = 285;
+    const GOLDEN_AXE = 286;
+    const STRING = 287;
+    const FEATHER = 288;
+    const GUNPOWDER = 289;
+    const WOODEN_HOE = 290;
+    const STONE_HOE = 291;
+    const IRON_HOE = 292;
+    const DIAMOND_HOE = 293;
+    const GOLD_HOE = 294;
+    const GOLDEN_HOE = 294;
+    const SEEDS = 295;
+    const WHEAT_SEEDS = 295;
+    const WHEAT = 296;
+    const BREAD = 297;
+    const LEATHER_CAP = 298;
+    const LEATHER_TUNIC = 299;
+    const LEATHER_PANTS = 300;
+    const LEATHER_BOOTS = 301;
+    const CHAIN_HELMET = 302;
+    const CHAIN_CHESTPLATE = 303;
+    const CHAIN_LEGGINGS = 304;
+    const CHAIN_BOOTS = 305;
+    const IRON_HELMET = 306;
+    const IRON_CHESTPLATE = 307;
+    const IRON_LEGGINGS = 308;
+    const IRON_BOOTS = 309;
+    const DIAMOND_HELMET = 310;
+    const DIAMOND_CHESTPLATE = 311;
+    const DIAMOND_LEGGINGS = 312;
+    const DIAMOND_BOOTS = 313;
+    const GOLD_HELMET = 314;
+    const GOLD_CHESTPLATE = 315;
+    const GOLD_LEGGINGS = 316;
+    const GOLD_BOOTS = 317;
+    const FLINT = 318;
+    const RAW_PORKCHOP = 319;
+    const COOKED_PORKCHOP = 320;
+    const PAINTING = 321;
+    const GOLDEN_APPLE = 322;
+    const SIGN = 323;
+    const WOODEN_DOOR = 324;
+    const BUCKET = 325;
+
+    const MINECART = 328;
+    const SADDLE = 329;
+    const IRON_DOOR = 330;
+    const REDSTONE = 331;
+    const REDSTONE_DUST = 331;
+    const SNOWBALL = 332;
+    const BOAT = 333;
+    const LEATHER = 334;
+
+    const BRICK = 336;
+    const CLAY = 337;
+    const SUGARCANE = 338;
+    const SUGAR_CANE = 338;
+    const SUGAR_CANES = 338;
+    const PAPER = 339;
+    const BOOK = 340;
+    const SLIMEBALL = 341;
+
+    const EGG = 344;
+    const COMPASS = 345;
+    const FISHING_ROD = 346;
+    const CLOCK = 347;
+    const GLOWSTONE_DUST = 348;
+    const RAW_FISH = 349;
+    const COOKED_FISH = 350;
+    const DYE = 351;
+    const BONE = 352;
+    const SUGAR = 353;
+    const CAKE = 354;
+    const BED = 355;
+
+    const REPEATER = 356;
+
+    const COOKIE = 357;
+
+    const FILLED_MAP = 358;
+
+    const SHEARS = 359;
+    const MELON = 360;
+    const MELON_SLICE = 360;
+    const PUMPKIN_SEEDS = 361;
+    const MELON_SEEDS = 362;
+    const RAW_BEEF = 363;
+    const STEAK = 364;
+    const COOKED_BEEF = 364;
+    const RAW_CHICKEN = 365;
+    const COOKED_CHICKEN = 366;
+    const ROTTEN_FLESH = 367;
+
+    const BLAZE_ROD = 369;
+    const GHAST_TEAR = 370;
+    const GOLD_NUGGET = 371;
+    const GOLDEN_NUGGET = 371;
+    const NETHER_WART = 372;
+    const POTION = 373;
+    const GLASS_BOTTLE = 374;
+    const SPIDER_EYE = 375;
+    const FERMENTED_SPIDER_EYE = 376;
+    const BLAZE_POWDER = 377;
+    const MAGMA_CREAM = 378;
+
+    const BREWING_STAND = 379;
+    const CAULDRON = 380;
+
+    const GLISTERING_MELON = 382;
+    const SPAWN_EGG = 383;
+    const BOTTLE_O_ENCHANTING = 384;
+    const ENCHANTING_BOTTLE = 384;
+
+    const EMERALD = 388;
+
+    const ITEM_FRAME = 389;
+
+    const FLOWER_POT = 390;
+    const CARROT = 391;
+    const CARROTS = 391;
+    const POTATO = 392;
+    const POTATOES = 392;
+    const BAKED_POTATO = 393;
+    const BAKED_POTATOES = 393;
+    const POISONOUS_POTATO = 394;
+    const MAP = 395;
+    const GOLDEN_CARROT = 396;
+    const MOB_HEAD = 397;
+    const SKULL = 397;
+    const PUMPKIN_PIE = 400;
+
+    const ENCHANTED_BOOK = 403;
+
+    const NETHER_BRICK = 405;
+    const QUARTZ = 406;
+    const NETHER_QUARTZ = 406;
+
+    const RAW_RABBIT = 411;
+    const COOKED_RABBIT = 412;
+    const RABBIT_STEW = 413;
+    const RABBIT_FOOT = 414;
+    const RABBIT_HIDE = 415;
+    const SPRUCE_DOOR = 427;
+    const BIRCH_DOOR = 428;
+    const JUNGLE_DOOR = 429;
+    const ACACIA_DOOR = 430;
+    const DARK_OAK_DOOR = 431;
+    const SPLASH_POTION = 438;
+    const SPRUCE_BOAT = 444;
+    const BIRCH_BOAT = 445;
+    const JUNGLE_BOAT = 446;
+    const ACACIA_BOAT = 447;
+    const DARK_OAK_BOAT = 448;
+
+    const CAMERA = 439;
+    const BEETROOT = 457;
+    const BEETROOT_SEEDS = 458;
+    const BEETROOT_SEED = 458;
+    const BEETROOT_SOUP = 459;
+
+    const RAW_SALMON = 460;
+    const CLOWN_FISH = 461;
+    const PUFFER_FISH = 462;
+    const COOKED_SALMON = 463;
+
+    const ENCHANTING_GOLDEN_APPLE = 466;
+
+</code></pre></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://Cakee007.github.io">Cake Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","Cakee007/Cakee007.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>
