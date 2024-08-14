@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Cake Blog</title><link>https://Cakee007.github.io</link><description>This is Cake Blog, and every text here will be saved forever!</description><copyright>Cake Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.minecraft.net/content/dam/minecraftnet/education-edition/icons/Homepage_Gameplay-Trailer_MC-Education-logo_300x300.png</url><title>avatar</title><link>https://Cakee007.github.io</link></image><lastBuildDate>Wed, 14 Aug 2024 06:42:00 +0000</lastBuildDate><managingEditor>Cake Blog</managingEditor><ttl>60</ttl><webMaster>Cake Blog</webMaster><item><title>Minecraft颜色&amp;格式代码</title><link>https://Cakee007.github.io/post/Minecraft-yan-se-%26-ge-shi-dai-ma.html</link><description>**基本符号§**&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Cake Blog</title><link>https://Cakee007.github.io</link><description>This is Cake Blog, and every text here will be saved forever!</description><copyright>Cake Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.minecraft.net/content/dam/minecraftnet/education-edition/icons/Homepage_Gameplay-Trailer_MC-Education-logo_300x300.png</url><title>avatar</title><link>https://Cakee007.github.io</link></image><lastBuildDate>Wed, 14 Aug 2024 06:45:42 +0000</lastBuildDate><managingEditor>Cake Blog</managingEditor><ttl>60</ttl><webMaster>Cake Blog</webMaster><item><title>Minecraft颜色&amp;格式代码</title><link>https://Cakee007.github.io/post/Minecraft-yan-se-%26-ge-shi-dai-ma.html</link><description>**基本符号§**&#13;
 &#13;
+```&#13;
 **### 颜色代码**&#13;
 const BLACK = TextFormat::ESCAPE . '0';        &#13;
 // 黑色&#13;
@@ -50,6 +51,9 @@ const YELLOW = TextFormat::ESCAPE . 'e';       &#13;
 const WHITE = TextFormat::ESCAPE . 'f';         &#13;
 // 白色&#13;
 &#13;
+```&#13;
+&#13;
+```&#13;
 **### 格式代码**&#13;
 const OBFUSCATED = TextFormat::ESCAPE . 'k';    &#13;
 // 随机字符（混淆）&#13;
@@ -67,7 +71,8 @@ const ITALIC = TextFormat::ESCAPE . 'o';        &#13;
 // 斜体&#13;
 &#13;
 const RESET = TextFormat::ESCAPE . 'r';         &#13;
-// 重置所有格式。</description><guid isPermaLink="true">https://Cakee007.github.io/post/Minecraft-yan-se-%26-ge-shi-dai-ma.html</guid><pubDate>Wed, 14 Aug 2024 06:38:16 +0000</pubDate></item><item><title>iOS老设备下载站-installipa软件网</title><link>https://Cakee007.github.io/post/iOS-lao-she-bei-xia-zai-zhan--installipa-ruan-jian-wang.html</link><description>### **Installipa老设备下载站**&#13;
+// 重置所有格式&#13;
+```。</description><guid isPermaLink="true">https://Cakee007.github.io/post/Minecraft-yan-se-%26-ge-shi-dai-ma.html</guid><pubDate>Wed, 14 Aug 2024 06:38:16 +0000</pubDate></item><item><title>iOS老设备下载站-installipa软件网</title><link>https://Cakee007.github.io/post/iOS-lao-she-bei-xia-zai-zhan--installipa-ruan-jian-wang.html</link><description>### **Installipa老设备下载站**&#13;
 Ps（写在前头）：网站内的软件只支持系统iOS11以下（不包含iOS11）安装使用，其他高版本请谨慎下载！&#13;
 ### **网址:www.installipa.com**'&#13;
 如果进不去网站，请把网址栏中的https改成http&#13;

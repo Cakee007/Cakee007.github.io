@@ -1,5 +1,6 @@
 **基本符号§**
 
+```
 **### 颜色代码**
 const BLACK = TextFormat::ESCAPE . "0";        
 // 黑色
@@ -49,6 +50,9 @@ const YELLOW = TextFormat::ESCAPE . "e";
 const WHITE = TextFormat::ESCAPE . "f";         
 // 白色
 
+```
+
+```
 **### 格式代码**
 const OBFUSCATED = TextFormat::ESCAPE . "k";    
 // 随机字符（混淆）
@@ -67,3 +71,4 @@ const ITALIC = TextFormat::ESCAPE . "o";
 
 const RESET = TextFormat::ESCAPE . "r";         
 // 重置所有格式
+```
