@@ -49,7 +49,7 @@ const YELLOW = TextFormat::ESCAPE . "e";
 const WHITE = TextFormat::ESCAPE . "f";         
 // 白色
 
-格式代码
+**### 格式代码**
 const OBFUSCATED = TextFormat::ESCAPE . "k";    
 // 随机字符（混淆）
 
